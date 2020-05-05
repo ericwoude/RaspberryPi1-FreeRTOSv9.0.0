@@ -5,3 +5,6 @@
 *.idea
 # Object files
 *.o
+# Output files
+FreeRTOS/Demo/ARM6_BCM2835/out/
+FreeRTOS/Demo/ARM6_BCM2835/out
