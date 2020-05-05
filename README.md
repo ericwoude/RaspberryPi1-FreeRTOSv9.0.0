@@ -13,8 +13,8 @@
 - Léonard Bise and lbise who made this version of FreeRTOS compatible with Raspberry 1 - https://github.com/leodido99/RaspberryPi1-FreeRTOSv9.0.0
 
 ## How to use
-1. Create the docker image
+1. Create the docker image by running the following command  
 `docker build -t [name] --build-arg USER_ID=$(id -u) --build-arg GROUP_ID=$(id -g) .`
-2. Run the container's console and bind the project folder
-`docker run -it --rm --mount "type=bind,src=$(pwd),dst=/opt/shared" --workdir /opt/shared [name] bash`
+2. Run the container's console and bind the project folder  
+Use the following command in the project's root folder; `docker run -it --rm --mount "type=bind,src=$(pwd),dst=/opt/shared" --workdir /opt/shared [name] bash`
 3. Compile the kernel by running `make` in the following folder: _/FreeRTOS/Demo/ARM6_BCM2835_
